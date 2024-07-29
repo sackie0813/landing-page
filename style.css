@@ -2,6 +2,18 @@
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
+body {
+    margin:0px;
+}
+
+h1 {
+    margin:5px;
+}
+
+p {
+    margin:5px;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -9,29 +21,33 @@ a {
 
 button {
     color:rgb(255, 255, 255);
-    background-color: rgb(21, 130, 173);
+    background-color: rgb(75, 72, 245);
     font-size: 16px;
     padding:6px;
     border-radius: 15px 50px;
-    
 }
 
 .header , .header-links {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding:10px;
+    padding:10px 25px;
+
 }
 
 .header {
     color: #F9FAF8;
     background-color: #1F2937;
+    border-color:solid #1F2937;
     font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 40px;
 }
 
 .header-links {
     font-size: 18px;
     color: #E5E7EB;
+    font-weight:400;
     gap:10px;
 }
 
@@ -44,11 +60,74 @@ button {
 .content {
     background-color: #1F2937;
     color: #F9FAF8;
+    gap:10px;
+    padding-top:20px;
+    padding-bottom:90px;
 }
 
 .content-body {
-    max-width:200px;
+    max-width:400px;
     align-items: flex-start;
     flex-wrap:wrap;
     flex-direction:column;
+    
+}
+
+.information {
+    display: flex;
+    flex-direction:column;
+    padding: 16px 0px;
+    margin: 0% 20%;
+}
+
+.info-heading {
+    display:flex;
+    justify-content: center;
+}
+
+.info-container {
+    display:flex;
+    padding: 16px;
+    padding-bottom:70px;
+    flex-direction:row;
+    justify-content: center;
+    gap:20px;
+
+}
+
+.info > img {
+    width:200px;
+    height:200px;
+    max-width: 200px;
+    max-height: 200x;
+}
+
+.info {
+    text-align: center;
+    font-size:12px;
+    max-width:200px;
+}
+
+.quote-container {
+    display:flex;
+    padding: 70px 33%;
+    background-color: #E5E7EB;
+    flex-direction: column;
+}
+
+#quote {
+    display:flex;
+    font-size:26px;
+    font-style:italic;
+    font-weight:lighter;
+    color:#1F2937;
+    flex-wrap:wrap;
+    
+}
+
+#person {
+    display: flex;
+    justify-content:flex-end;
+    font-size:18px;
+    font-weight:bolder;
 }
